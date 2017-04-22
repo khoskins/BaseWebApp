@@ -17,6 +17,10 @@ app.get('/post', function(request, response) {
   response.render('pages/post');
 });
 
+app.get('/read', function(request, response) {
+  response.render('pages/read');
+});
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });

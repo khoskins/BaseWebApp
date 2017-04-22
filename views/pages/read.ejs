@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="index">Home</a></li>
+    <li role="presentation"><a href="post">Post a Message</a></li>
+    <li role="presentation"><a href="#">Read Messages</a></li>
+  </ul>
+
+  <!-- the classes 'page-header' and 'btn btn-default' create bootstrap components.  -->
+  <!-- Check out more components here: http://getbootstrap.com/components/ -->
+  <div class="page-header">
+    <h1>Welcome to the Message Board!</h1>
+    <h3>Log in, post a message, read some messages, it's the best thing in the world!</h3>
+  </div>
+
+  <button id = "login-button" class="btn btn-success" type="button" onclick="toggleSignIn()">
+    Sign in.
+  </button>
+
+  <div id = "stream">
+    Messages:
+  </div>
+
+
+  <div id="doge-image"/>
+
+</body>
+</html>
