@@ -11,10 +11,12 @@ function myFunction() {
 
 
 function createHTML(message) {
+  console.log(`${message.authorPic}`);
   return (
     `<div id="post-block">
     	<div id="post-title">${message.title}</div>
     	<div id="post-author">by ${message.author}</div>
+      <img id="post-img" src=${message.authorPic}</img>
     	<div id="post-body">${message.body}</div>
     </div>`
   );
