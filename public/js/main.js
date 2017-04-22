@@ -8,7 +8,12 @@ function myFunction() {
   // 'img-circle' is a bootstrap thing! Check out more here: http://getbootstrap.com/css/
   $("#doge-image").append(`<img class="img-circle" src="/images/grumpy-cat.jpg" />`);
 }
-
+function createHTML(message) {
+  var author = message
+  "
+    <div>${message.body}</div>
+  "
+}
 function initializeStreamListener() {
   const databaseStreamReference = firebase.database().ref('/stream/');
 
@@ -19,7 +24,7 @@ function initializeStreamListener() {
     if (messages) {
       Object.keys(messages).forEach(function (key) {
         const message = messages[key];
-        $('#stream').append(`<div>${message.body}</div>`);
+        $('#stream').append(createHTML(message));
       });
     }
   });
