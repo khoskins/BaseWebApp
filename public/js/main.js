@@ -36,7 +36,7 @@ function initializeStreamListener() {
     if (messages) {
       Object.keys(messages).forEach(function (key) {
         const message = messages[key];
-        $('#stream').append(createHTML(message));
+        $('#stream').prepend(createHTML(message));
       });
     }
   });
