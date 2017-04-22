@@ -8,6 +8,8 @@ function myFunction() {
   // 'img-circle' is a bootstrap thing! Check out more here: http://getbootstrap.com/css/
   $("#doge-image").append(`<img class="img-circle" src="/images/grumpy-cat.jpg" />`);
 }
+
+
 function createHTML(message) {
   var author = message
   "
@@ -16,6 +18,8 @@ function createHTML(message) {
     <div>${message.body}</div>
   "
 }
+
+
 function initializeStreamListener() {
   const databaseStreamReference = firebase.database().ref('/stream/');
 
