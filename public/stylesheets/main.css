@@ -6,7 +6,7 @@ body {
 
 h1 {
   font-family: 'Lobster', cursive;
-  color: orange;
+  color: green;
 }
 
 p {
@@ -22,4 +22,14 @@ p {
 #new-post-body {
 	height: 200px;
 	width: 500px;
+}
+
+#post-title {
+  font-family: 'Lobster', cursive;
+  color: green;
+  font-size: 25px;
+}
+
+#post-author {
+	color: purple;
 }

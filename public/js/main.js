@@ -11,12 +11,13 @@ function myFunction() {
 
 
 function createHTML(message) {
-  var author = message
-  "
-    <div>${message.title}</div>
-    <div>${message.author}</div>
-    <div>${message.body}</div>
-  "
+  return (
+    `<div>
+    	<div id="post-title">${message.title}</div>
+    	<div id="post-author">by ${message.author}</div>
+    	<div id="post-body">${message.body}</div>
+    </div>`
+  );
 }
 
 
