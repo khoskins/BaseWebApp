@@ -12,7 +12,7 @@ function myFunction() {
 
 function createHTML(message) {
   return (
-    `<div>
+    `<div id="post-block">
     	<div id="post-title">${message.title}</div>
     	<div id="post-author">by ${message.author}</div>
     	<div id="post-body">${message.body}</div>

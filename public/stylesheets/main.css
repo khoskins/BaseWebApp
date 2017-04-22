@@ -33,3 +33,7 @@ p {
 #post-author {
 	color: purple;
 }
+
+#post-block{
+	padding:5px;
+}
