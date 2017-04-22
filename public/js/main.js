@@ -11,6 +11,8 @@ function myFunction() {
 function createHTML(message) {
   var author = message
   "
+    <div>${message.title}</div>
+    <div>${message.author}</div>
     <div>${message.body}</div>
   "
 }
